@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Sneakers - Snekkin</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <svg viewBox="0 0 200 44">
+                    <text x="0" y="35">SNEKKIN</text>
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sneakers.html">SNEAKERS</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="trending.html" class="active">TRENDING</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-actions">
+                <div class="search-box">
+                    <span class="search-svg">
+                        <svg width="20" height="20" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    </span>
+                    <input type="text" placeholder="Search" />
+                </div>
+                <span class="icon profile-svg">
+                    <svg width="24" height="24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 8-4 8-4s8 0 8 4"/></svg>
+                    <span class="icon-badge">1</span>
+                </span>
+                <span class="icon">&#10084;</span>
+                <span class="icon cart-svg">
+                    <svg width="24" height="24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-13z"/><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/></svg>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">SNEAKERS</a></li>
+            <li><a href="men.html">MEN</a></li>
+            <li><a href="kids.html">KIDS</a></li>
+            <li><a href="trending.html">TRENDING</a></li>
+        </ul>
+    </div>
+    <div class="navbar-spacer"></div>
+
+    <main class="products-section">
+        <div class="products-header">
+            <h1>Trending Sneakers</h1>
+            <div class="filters">
+                <div class="search-box">
+                    <span class="search-svg">
+                        <svg width="20" height="20" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="7"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </span>
+                    <input type="text" placeholder="Search trending sneakers...">
+                </div>
+                <select id="sort-by">
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="popular">Most Popular</option>
+                </select>
+            </div>
+        </div>
+        <div id="products-container" class="products-grid">
+            <!-- Product cards will be added here -->
+        </div>
+    </main>
+
+    <script src="js/products.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html> 
